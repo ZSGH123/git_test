@@ -85,4 +85,17 @@ git学习笔记：
     git rm -r --cached mskz-*/target/*
 八：删除当前分支未跟踪的本地文件
     git clean -f
-   九：
+九：查看远程仓库信息
+    git remote show [remote-name]
+十 ：添加远程仓库
+    要添加一个新的远程仓库，可以指定一个简单的名字，以便将来引用，运行 git remote add [shortname] [url]：
+十一：远程仓库抓取数据
+    git fetch [remote-name]
+十二：远程仓库的删除和重命名
+    1.git remote rename 命令修改某个远程仓库在本地的简称，比如想把 pb 改成 paul，可以这么运行：git remote rename pb paul
+	  注意，对远程仓库的重命名，也会使对应的分支名称发生变化，原来的 pb/master 分支现在成了 paul/master。
+
+    2.碰到远端仓库服务器迁移，或者原来的克隆镜像不再使用，又或者某个参与者不再贡献代码，那么需要移除对应的远端仓库，可以运行 git remote rm 命令：
+       $ git remote rm paul
+       $ git remote
+       origin
