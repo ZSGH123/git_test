@@ -54,6 +54,13 @@ git学习笔记：
 	11.查看远程分支
 	 git remote
 	 git remote -v
+	12.拉取远程分支到本地
+	git pull origin [远程branch-name]:[本地 branch-name]
+	12.拉取远程分支到本地，并同时切换分支
+	git checkout -b [本地 branch-name] :origin/[远程branch-name]
+	13.推送本地分支到远程服务器
+	git push origin [本地 branch-name]:[远程branch-name]
+	
 五：git stash命令的使用	 
     1.背景：并不是你不想提交，而是工作只进行到一半，还没法提交，预计完成还需1天时间。但是，必须在两个小时内修复该bug，
 	怎么办？幸好，Git还提供了一个stash功能，可以把当前工作现场“储藏”起来，等以后恢复现场后继续工作
