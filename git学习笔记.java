@@ -99,3 +99,4 @@ git学习笔记：
        $ git remote rm paul
        $ git remote
        origin
+十三：git cherry命令查看提交的分支的不同，也就是说你可以git cherry origin/master 查看，显示在当前分支origin/master下提交的状态
