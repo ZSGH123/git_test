@@ -49,8 +49,7 @@ git学习笔记：
     9.删除分支
 	 git branch -d <name> 
 	10.删除远程分支
-	 git branch -r -d origin/<branch-name>  
-	 git push origin:branch-name
+	 git push origin -d yourbranch  
 	11.查看远程分支
 	 git remote
 	 git remote -v
