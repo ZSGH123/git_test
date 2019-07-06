@@ -59,6 +59,8 @@ git学习笔记：
 	git checkout -b [本地 branch-name] :origin/[远程branch-name]
 	13.推送本地分支到远程服务器
 	git push origin [本地 branch-name]:[远程branch-name]
+	14.本地分支关联远程分支
+	git branch --set-upstream-to=origin/remote_branch  your_branch
 	
 五：git stash命令的使用	 
     1.背景：并不是你不想提交，而是工作只进行到一半，还没法提交，预计完成还需1天时间。但是，必须在两个小时内修复该bug，
