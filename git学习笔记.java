@@ -28,6 +28,8 @@ git学习笔记：
 	  git reset HEAD <file> 可以把暂存区的修改撤销掉（unstage），重新放回工作区
 	3.版本回退
 	  Git允许我们在版本的历史之间穿梭，使用命令git reset --hard commit_id 或 git reset --hard HEAD~100
+	4.清除工作区和暂存区的内容
+	  git reset --hard
 四：git分支的使用
     1.查看分支的合并情况：
     git log --graph --pretty=oneline --abbrev-commit
@@ -108,3 +110,11 @@ git学习笔记：
        $ git remote
        origin
 十三：git cherry命令查看提交的分支的不同，也就是说你可以git cherry origin/master 查看，显示在当前分支origin/master下提交的状态
+
+十四：使用git命令重命名文件
+   git mv readme readme.md
+十五：git查看commit类型
+   git cat-file -t commit_id
+   git查看commit内容
+   git cat-file -p commit_id
+ 
