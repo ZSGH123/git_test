@@ -117,4 +117,8 @@ git学习笔记：
    git cat-file -t commit_id
    git查看commit内容
    git cat-file -p commit_id
+ 十六：git中commit对象，tree对象，blob对象，tag对象之间关系
+ 
+ 十七：查找.git/objects下所有文件
+    find .git/objects -type f
  
